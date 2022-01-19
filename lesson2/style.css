@@ -102,6 +102,10 @@
     font-family: "Merienda", cursive;
     color: #FEFFFE;
     }
+
+    img {
+      width: 100%;
+    }
     
     p {
       color: #28262C;
