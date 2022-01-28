@@ -5,3 +5,22 @@ body {
 .newstyle {
     background-color: red;
 }
+
+
+ul {
+    list-style: none;
+display: flex;
+flex-direction: column;
+padding: 20px;
+}
+
+
+li {
+    display: none;
+    padding: 20px;
+}
+
+.ham {
+    display: block;
+}
+
