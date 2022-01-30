@@ -25,7 +25,7 @@ let w_names = ['Sunday'
 let m_names = ['January' , 'February', 'March', 'April', 'May', 'June', 'July', 'August',
 'September', 'October', 'November'
 , 'December'];
-let mydate = new Datel);
+let mydate = new Date();
 console. log(mydate);
 
 
