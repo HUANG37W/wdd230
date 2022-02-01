@@ -7,30 +7,16 @@ body {
 }
 
 
-ul {
-    list-style: none;
-display: flex;
-flex-direction: column;
-padding: 20px;
+.navigation li:first-child{
+    display: block;
 }
-
-
-li {
+.navigation li {
     display: none;
-    padding: 20px;
 }
 
-.ham {
-    display: block;
-}
 .responsive li{
-    display: block;
+    display: flex;
 }
 
-@media screen and (min-width: 600px) {
-    li {
-        display: block;
-    }
-}
 
 
