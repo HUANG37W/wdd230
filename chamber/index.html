@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
-    
+
     <link href="css/base.css" rel='stylesheet'> 
     <link href="css/medium.css" rel='stylesheet'>
     <link href="css/large.css" rel='stylesheet'>
@@ -14,8 +14,10 @@
 <body>
 
     <header>
-        <img src="" alt="logo">
+        <div class="logobox">
+        <img src="images/taoyuan.png" alt="logo">
         <h1>Taoyuan City</h1>
+    </div>
         <nav>
             <ul class="navigation">
                 <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
@@ -25,22 +27,34 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div>
-            <img src="" alt="img1">
-            <img src="" alt="img2">
+        <div class="social_icon">
+            <img src="images/fb.png" alt="img1">
+            <img src="images/linkdin.png" alt="img2">
         </div>
         <p id="date">date</p>
+        
+       
+        
+        <script>
+            let currentdate = document.lastModified;
+            // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
+            document.getElementById('modified').textContent = `Last Updated ${currentdate} . `;
+        </script>
+
     </header>
     <main>
-        <p>Hero with site name and call to action</p>
-        <p>Event</p>
-        <p>Weather</p>
-        <p>News Release</p>
-        <p>Spotlight 1</p>
-        <p>Spotlight 2</p>
+        <p class="first">Hero with site name and call to action</p>
+        <p class="second">Weather</p>
+        <p class="third">News Release</p>
+        <div class="fourth">
+            <p class="fifth">Spotlight 1</p>
+            <p class="sixth">Spotlight 2</p>
+        </div>
+        
     </main>
     <footer>
-
+        <h3>© 2022 .:|:. Jason Huang .:|:. Idaho</h3>
+            <p id="modified"></p>
     </footer>
     <script src="./js/script.js"></script>
 </body>

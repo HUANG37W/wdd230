@@ -2,9 +2,51 @@ body {
     background-color: beige;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: greenyellow;
+    padding: 3%;
+}
+.logobox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.logobox img{
+    width: 80px;
+}
+.logobox h1{
+    margin: 0;
+}
+header nav{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.navigation{
+    display: grid;
+}
+.social_icon{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    align-items: center;
+}
+.social_icon img{
+ width: 25px;
+ border-radius: 50%;
+}
+#date{
+    background-color: burlywood;
+    grid-column: 1/4;
+    text-align: center;
+}
 .newstyle {
     background-color: red;
 }
+
+
 
 
 .navigation li:first-child{
@@ -17,6 +59,9 @@ body {
 .responsive li{
     display: flex;
 }
-
+main {
+    display: block;
+    text-align: center;
+}
 
 
