@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
 body {
     background-color: beige;
 }
@@ -5,7 +7,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    background-color: rgb(63, 219, 211);
+    background-color: rgba(86, 63, 219, 0.377);
     padding: 3%;
 }
 .logobox{
@@ -80,4 +82,27 @@ main {
 
 #spot{
     height: 300px;
+}
+
+#hero{
+    background-image: url("/images/city.jpg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero p{
+    font-family: 'Rowdies', cursive;
+    margin-bottom: 50px;
+}
+
+#hero a{
+    padding: 20px;
+    border: 1px solid black;
+    background-color: green;
+    margin-top: 10px;
+    font-size:large;
+    font-family: 'Rowdies', cursive;
+    text-decoration: none;
+    color: black;
 }
