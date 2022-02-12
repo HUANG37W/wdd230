@@ -1,8 +1,15 @@
 @media screen and (min-width: 1000px) {
-.main{
-    display: grid;
-    grid-template-columns: 1fr 2.5fr 1fr;
-    grid-template-rows: 1fr;
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    footer {
+        /* border-style: solid; */
+    }
 }
- }
 
