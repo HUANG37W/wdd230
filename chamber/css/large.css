@@ -9,7 +9,7 @@
         grid-template-rows: 1fr;
     }
     footer {
-        /* border-style: solid; */
+        border-style: solid;
     }
 }
 
