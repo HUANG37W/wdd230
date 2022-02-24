@@ -3,6 +3,11 @@
     box-sizing: border-box;
   }
   
+  img:hover {
+    box-shadow: 10px 10px 5px black;
+  }
+
+
   body {
     padding: 16px;
     width: 100vw;
