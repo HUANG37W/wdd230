@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="thankyou.html">
+        <label for="fn">first name:</label>
+        <input id="fn" name="firstname" required>
+        <label for="ln">last name:</label>
+        <input id="ln" name="lastname" required>
+        <label title="Business Position">BP:</label>
+        <input id="bp" name="businessposition" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="johndoe@gmail.com"/>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" name="phoneNumber" placeholder="555-555-5555" required/>
+        <label title="Business Name">BN:</label>
+        <input id="bn" name="businessname" required>
+
+
+        <label for="membershipLevel">Membership Level</label>
+        <input
+          list="types"
+          name="membershipLevel"
+          id="membershipLevel"
+          placeholder="Choose the type of membership level"
+        />
+        <datalist id="types">
+          <option value="Starter"></option>
+          <option value="Pro"></option>
+          <option value="Premium"></option>
+          <option value="Elite"></option>
+          <option value="VIP"></option>
+        </datalist>
+
+
+        <label for="textArea">Business Description: </label>
+        <textarea name="textArea" cols="30" rows="10"></textarea>
+
+        <input id='date' type="hidden" name="todaydate">
+
+        <input type="submit" value="Submit">
+</body>
+</html>
