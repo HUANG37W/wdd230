@@ -31,3 +31,15 @@ fetch(requestURL)
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
   }
+
+//to clear out cards
+//let cards = document.querySelectorAll('.cards')
+//cards.forEach((items)=>{
+//items.remove();
+//})
+
+
+//changing styles in JS
+
+let change = document.querySelector('.cards');
+change.setAttribute('style','background-color: pink; border: 5px solid yellow; display: block;')
