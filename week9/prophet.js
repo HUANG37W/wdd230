@@ -38,8 +38,14 @@ fetch(requestURL)
 //items.remove();
 //})
 
-
+function changeStyles() {
 //changing styles in JS
-
+if (window.innerWidth > 800 && window,innerWidth < 1000){
 let change = document.querySelector('.cards');
 change.setAttribute('style','background-color: pink; border: 5px solid yellow; display: block;')
+ }
+}
+// event listeners 
+
+window.addEventListener('resize', changeStyles);
+//window.addEventListener('load', changeStyles);
