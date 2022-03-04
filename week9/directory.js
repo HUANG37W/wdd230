@@ -1,12 +1,12 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://raw.githubusercontent.com/HUANG37W/wdd230/main/week9/data.json';
 
 fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const prophets = jsonObject['prophets'];
+    console.log(jsonObject);  // temporary checking for valid response and data parsing
+    const businesses = jsonObject[''];
     prophets.forEach(displayProphets);
   });
 
