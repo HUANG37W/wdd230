@@ -15,4 +15,7 @@ function cards(){
   card.className = 'company';
   const box = document.querySelector('.cards');
   box.appendChild(card);
+  const img = document.createElement('img');
+  img.className = 'company-logo';
+  box.appendChild(img);
 }
