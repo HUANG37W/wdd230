@@ -8,15 +8,8 @@ flex-wrap: wrap;
 text-align: center;
 justify-content: center;;
 }
-.cards, section {
-border: 1px solid navy;
-background-color: lightblue;
-padding: 30px;
-text-align: center;
-width: 300px;
-margin: 20px;
-}
-h2, h1 {
+
+h1 {
 color: navy;
 text-align: center;
 }
