@@ -6,7 +6,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.log(jsonObject);  // temporary checking for valid response and data parsing
-    const businesses = jsonObject['companies'];
+    const companies = jsonObject['companies'];
     companies.forEach(displayCompanies);
     //console.log(businesses[0]);
     //cards();
@@ -21,7 +21,7 @@ fetch(requestURL)
     let img = document.createElement('img');
     h2.textContent = `${company.name} ${company.lastname}`;
     adr.textContent = `${company.address}`;
-    phr.textContent = `${company.phone}`;
+    phn.textContent = `${company.phone}`;
     img.setAttribute('src', company.imageurl);
     img.setAttribute('alt', `${company.name} ${company.lastname} ${company.order}`);
 
