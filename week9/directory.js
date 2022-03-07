@@ -20,8 +20,8 @@ fetch(requestURL)
     let phn = document.createElement('p');
     let img = document.createElement('img');
     h2.textContent = `${company.name} ${company.lastname}`;
-    adr.textContent = `${prophet.birthdate}`;
-    phr.textContent = `${prophet.birthplace}`;
+    adr.textContent = `${company.address}`;
+    phr.textContent = `${company.phone}`;
     img.setAttribute('src', company.imageurl);
     img.setAttribute('alt', `${company.name} ${company.lastname} ${company.order}`);
 
