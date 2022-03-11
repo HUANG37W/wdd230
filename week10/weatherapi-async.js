@@ -10,8 +10,7 @@ async function getweather() {
     const wSpeedSpan = document.querySelector('#windspeed');
     wSpeedSpan.innerHTML = "Wind Speed: " + wSpeed.toString() + 'mph';
     const temp = data.wind.deg;
-    const windChill = (35.74 + (0.6215 * temp))-
-        (35.75 * Math.pow(wSpeed,0.16)) + (0.4275*temp*Math.pow(wSpeed,0.16));
+    const windChill = (35.74 + (0.6215 * temp))-(35.75 * Math.pow(wSpeed,0.16)) + (0.4275*temp*Math.pow(wSpeed,0.16));
     const windChillSpan = document.querySelector('#windchill');
     windChillSpan.innerHTML = "Wind Chill: " + windChill.toString() + '°F';
     console.log(windChill);
