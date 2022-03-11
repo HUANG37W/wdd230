@@ -12,19 +12,19 @@ fetch(requestURL)
 
   function displayCompanies(company) {  
     // Create elements to add to the document
-    let card = document.createElement('section');
-    let list = document.createElement('section');
-    let listH2 = document.createElement('h2');    // Change the textContent property of the h2 element to contain the prophet's full name
-    let listAdr = document.createElement('p');
-    let listPhn = document.createElement('p');
-    let img = document.createElement('img');
-    let h2 = document.createElement('h2');    // Change the textContent property of the h2 element to contain the prophet's full name
-    let adr = document.createElement('p');
-    let phn = document.createElement('p');
-    h2.textContent = `${company.name} ${company.lastname}`;
-    adr.textContent = `${company.address}`;
-    phn.textContent = `${company.phone}`;
-    listH2.textContent = `${company.name} ${company.lastname}`;
+    let card            = document.createElement('section');
+    let h2              = document.createElement('h2');    // Change the textContent property of the h2 element to contain the prophet's full name
+    let img             = document.createElement('img');
+    let adr             = document.createElement('p');
+    let phn             = document.createElement('p');
+    let li              = document.createElement('section');
+    let listH2          = document.createElement('h2');    // Change the textContent property of the h2 element to contain the prophet's full name
+    let listAdr         = document.createElement('p');
+    let listPhn         = document.createElement('p');
+    h2.textContent      = `${company.name} ${company.lastname}`;
+    adr.textContent     = `${company.address}`;
+    phn.textContent     = `${company.phone}`;
+    listH2.textContent  = `${company.name} ${company.lastname}`;
     listAdr.textContent = `${company.address}`;
     listPhn.textContent = `${company.phone}`;
     img.setAttribute('src', company.imageurl);
@@ -35,19 +35,33 @@ fetch(requestURL)
     card.appendChild(adr);
     card.appendChild(phn);
     card.appendChild(img);
-    list.appendChild(listH2);
-    list.appendChild(listAdr);
-    list.appendChild(listPhn);
+    li.appendChild(listH2);
+    li.appendChild(listAdr);
+    li.appendChild(listPhn);
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
-  }
+    document.querySelector('div.list').appendChild(li);
+  } 
 
 const cardsButton = document.querySelector(".cards-button");
-const listsButton = document.querySelector(".lists-button");
+const listButton  = document.querySelector(".list-button");
 
 const Cards = document.querySelector(".cards");
-const Lists = document.querySelector(".lists");
+const List  = document.querySelector(".list");
 
 cardsButton.onclick = function(){
-  
+  const cardsBox  = document.querySelector(".cards");
+  const listBox   = document.querySelector(".list");
+
+  cardsBox.style.display  = "flex";
+  listBox.style.display   = "none";
+}
+
+listButton.onclick = function() {
+  const cardsBox  = document.querySelector(".cards");
+  const listBox   = document.querySelector(".list");
+
+  cardsBox.style.display  = "none";
+  listBox.style.display   = "block";
+
 }
