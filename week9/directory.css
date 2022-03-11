@@ -8,7 +8,7 @@
   text-align: center;
   justify-content: center;;
 }
-.cards section {
+.card {
   border: 1px solid navy;
   background-color: lightblue;
   padding: 30px;
@@ -23,16 +23,15 @@ h1 {
   color: navy;
   text-align: center;
 }
-
 h2 {
   color: navy;
 }
-img {
+.card-img {
   width: 90%;
   box-shadow: 5px 10px 8px 5px #888888;
 }
-button {
-  width: 5%;
+.button-img {
+  max-width: 30px;
 }
 .buttons {
   text-align: center;

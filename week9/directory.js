@@ -30,6 +30,9 @@ fetch(requestURL)
     img.setAttribute('src', company.imageurl);
     img.setAttribute('alt', `${company.name} ${company.lastname} ${company.order}`);
 
+    card.classList.add('card');
+    img.classList.add('card-img');
+
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
     card.appendChild(adr);
@@ -43,25 +46,35 @@ fetch(requestURL)
     document.querySelector('div.list').appendChild(li);
   } 
 
-const cardsButton = document.querySelector(".cards-button");
+const cardsButton = document.querySelector(".card-button");
 const listButton  = document.querySelector(".list-button");
 
 const Cards = document.querySelector(".cards");
 const List  = document.querySelector(".list");
 
+const cardsBox  = document.querySelector(".cards");
+const listBox   = document.querySelector(".list");
+
 cardsButton.onclick = function(){
-  const cardsBox  = document.querySelector(".cards");
-  const listBox   = document.querySelector(".list");
+  cardsBox  = document.querySelector(".cards");
+  listBox   = document.querySelector(".list");
 
   cardsBox.style.display  = "flex";
   listBox.style.display   = "none";
 }
 
 listButton.onclick = function() {
-  const cardsBox  = document.querySelector(".cards");
-  const listBox   = document.querySelector(".list");
+  cardsBox  = document.querySelector(".cards");
+  listBox   = document.querySelector(".list");
 
   cardsBox.style.display  = "none";
   listBox.style.display   = "block";
 
+}
+
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+if (vw >= 800 && vw < 1000) {
+  cardsBox.style.display  = "none";
+  listBox.style.display   = "block";
 }
