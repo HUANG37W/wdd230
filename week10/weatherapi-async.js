@@ -6,6 +6,15 @@ async function getweather() {
 
     const response  = await fetch(apiURL);
     const data      = await response.json();
+    const wSpeed = data.wind.speed;
+    const wSpeedSpan = document.querySelector('#windspeed');
+    wSpeedSpan.innerHTML = "Wind Speed: " + wSpeed.toString() + 'mph';
+    const temp = data.wind.deg;
+    const windChill = (35.74 + (0.6215 * temp))-
+        (35.75 * Math.pow(wSpeed,0.16)) + (0.4275*temp*Math.pow(wSpeed,0.16));
+    const windChillSpan = document.querySelector('#windchill');
+    windChillSpan.innerHTML = "Wind Chill: " + windChill.toString() + '°F';
+    console.log(windChill);
     console.log(data);
     const currentTemp   = document.querySelector('#current-temp');
     const weathericon   = document.querySelector('#weathericon');
