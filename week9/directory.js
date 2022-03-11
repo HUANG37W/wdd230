@@ -56,16 +56,16 @@ const cardsBox  = document.querySelector(".cards");
 const listBox   = document.querySelector(".list");
 
 cardsButton.onclick = function(){
-  cardsBox  = document.querySelector(".cards");
-  listBox   = document.querySelector(".list");
+  const cardsBox  = document.querySelector(".cards");
+  const listBox   = document.querySelector(".list");
 
   cardsBox.style.display  = "flex";
   listBox.style.display   = "none";
 }
 
 listButton.onclick = function() {
-  cardsBox  = document.querySelector(".cards");
-  listBox   = document.querySelector(".list");
+  const cardsBox  = document.querySelector(".cards");
+  const listBox   = document.querySelector(".list");
 
   cardsBox.style.display  = "none";
   listBox.style.display   = "block";
