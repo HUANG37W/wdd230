@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/chamber/css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="/chamber/css/lazyLoading.css" />
+    <script src="/chamber/js/lazyLoading.js" defer></script>
+    <title>Lazy Load Images</title>
+  </head>
+  <body>
+    <header>
+      <div class="logobox">
+        <a href="/chamber/index.html"><img src="images/taoyuan.png" alt="logo"></a>
+      <h1>Taoyuan City Chamber of Commerce</h1>
+  </div>
+      <nav>
+          <ul class="navigation">
+              <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+              <li><a href="/chamber/index.html">Home</a></li>
+              <li><a href="/chamber/discover.html">Discover</a></li>
+              <li><a href="/chamber/directory.html">Directory</a></li>
+              <li><a href="/chamber/join.html">Join</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+      <div class="social_icon">
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="img1"></a>
+          <a href="https://www.linkedin.com/feed/"target="_blank"><img src="images/linkdin.png" alt="img2"></a>
+      </div>
+      <p id="date">date</p>
+      
+     
+      
+      <script>
+          let currentdate = document.lastModified;
+          // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
+          document.getElementById('modified').textContent = `Last Updated ${currentdate} . `;
+      </script>
+  
+  </header>
+  <div id="lazyload">
+    <div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/400"
+      alt="Lazy loaded image"/>
+    <p>Beautiful views</p>
+    </div>
+    
+  
+    <div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/401"
+      alt="Lazy loaded image"/>
+    <p>Ocean sides</p>
+    </div>
+
+    <div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/402"
+      alt="Lazy loaded image"/>
+    <p>Sunny sides</p>
+    </div>
+
+    <div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/403"
+      alt="Lazy loaded image"/>
+    <p>People's smiles</p>
+    </div>
+
+    <div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/404"
+      alt="Lazy loaded image"/>
+    <p>Wildlife enviroment</p>
+    </div>
+
+
+    <div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/405"
+      alt="Lazy loaded image" />
+    <p>Housing layout</p>
+    </div>
+
+
+    <div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/406"
+      alt="Lazy loaded image"/>
+    <p>Animal livings</p>
+    </div>
+
+    <div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/407"
+      alt="Lazy loaded image"/>
+    <p>Color showings</p>
+    </div>
+
+    <div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/408"
+      alt="Lazy loaded image"/>
+    <p>Mountain views</p>
+    </div>
+
+    <div></div>
+    <img
+      src="images/placeholder.png"
+      data-src="https://unsplash.it/409"
+      alt="Lazy loaded image"/>
+    <p>Candy testing</p>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+  </body>
+</html>

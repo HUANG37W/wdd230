@@ -1,0 +1,108 @@
+{
+  "companies": [
+    {
+      "name": "RiveRidge",
+      "lastname": "ENGINEERING COMPANY",
+      "address": "2447 S. Vista Avenue Boise, Idaho 83705",
+      "phone": "(208)344-1180",
+      "website": "https://www.rvrdg.com/",
+      "imageurl": "https://lirp.cdn-website.com/4449e1f8/dms3rep/multi/opt/RR-logo-master-230w.png"
+    },
+
+    {
+      "name": "Edward Jones",
+      "lastname": "INVESTMENTS",
+      "address": "2054 Jennie Lee Dr, Idaho Falls, ID 83404",
+      "phone": "(208)528-7258",
+      "website": "https://www.edwardjones.com/us-en",
+      "imageurl": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_pad,h_666,q_75,w_1000/https://assets.simpleviewinc.com/simpleview/image/upload/crm/lakegenevawi/149_edward_jones_investments_bb6c0794-5056-a36a-09aacdd245d9bd03.png"
+    }, 
+
+    {
+      "name": "Albertsons",
+      "lastname": "MARKET",
+      "address": "490 N 2nd E Rexburg, ID 83440",
+      "phone": "(208)356-0555",
+      "website": "https://www.albertsons.com/",
+      "imageurl": "https://dynl.mktgcdn.com/p/-sJEwT7l_pRtT5slgkxglRYsyd0AGtjbYeJD2XO-XXM/2500x2500.png"
+    },
+
+    {
+      "name": "Idaho Milk",
+      "lastname": "PRODUCTS",
+      "address": "2249 S Tiger Dr, Jerome, ID 83338",
+      "phone": "(208)644-2882",
+      "website": "https://www.idahomilkproducts.com/",
+      "imageurl": "https://images.squarespace-cdn.com/content/v1/5980acf9197aea5e857a81eb/1602517611055-C8XDTTD5UPA3MT87UTZ8/Idaho+Milk+Products+Logo-01.png"
+    },
+
+    {
+      "name": "WinCo",
+      "lastname": "FOODS",
+      "address": "333 N Woodruff Ave, Idaho Falls, ID 83401",
+      "phone": "(208)552-9733",
+      "website": "https://www.wincofoods.com/",
+      "imageurl": "https://upload.wikimedia.org/wikipedia/en/thumb/6/62/WinCo_Foods_Logo.svg/1200px-WinCo_Foods_Logo.svg.png"
+    },
+
+    {
+      "name": "Idaho Milk",
+      "lastname": "PRODUCTS",
+      "address": "2249 S Tiger Dr, Jerome, ID 83338",
+      "phone": "(208)644-2882",
+      "website": "https://www.idahomilkproducts.com/",
+      "imageurl": "https://images.squarespace-cdn.com/content/v1/5980acf9197aea5e857a81eb/1602517611055-C8XDTTD5UPA3MT87UTZ8/Idaho+Milk+Products+Logo-01.png"
+    },
+    {
+      "name": "Mountain View",
+      "lastname": "HOSPITAL",
+      "address": "2325 Coronado St, Idaho Falls, ID 83404",
+      "phone": "(208)557-2700",
+      "website": "https://www.mountainviewhospital.org/",
+      "imageurl": "https://stem.idaho.gov/wp-content/uploads/2020/09/MountainViewHospital-web.png"
+    },
+    {
+      "name": "Applebee's",
+      "lastname": "GRILL + BAR",
+      "address": "975 University Blvd, Rexburg, ID 83440",
+      "phone": "(208)359-9922",
+      "website": "https://www.applebees.com/en",
+      "imageurl": "https://upload.wikimedia.org/wikipedia/commons/8/82/AB_Brand_Refresh_Logo_R.png"
+    },
+    {
+      "name": "MADISION RIDGE",
+      "lastname": "CHIROPRACTOR",
+      "address": "1096 Erikson Dr, Rexburg, ID 83440",
+      "phone": "(208)656-3205",
+      "website": "https://www.madisonridgechiropractic.com/",
+      "imageurl": "https://www.madisonridgechiropractic.com/wp-content/uploads/2021/07/Madison-Ridge-Chiropractic.png"
+    },
+    {
+      "name": "Alpine Dermatology",
+      "lastname": "CLINIC",
+      "address": "1049 Summers Dr, Rexburg, ID 83440",
+      "phone": "(208)359-4841",
+      "website": "http://www.alpinedermclinic.com/",
+      "imageurl": "https://sa1s3optim.patientpop.com/assets/images/provider/photos/1537836.jpg"
+    },
+    {
+      "name": "Paul Mitchell",
+      "lastname": "THE SCHOOL REXBURG",
+      "address": " 557 Mariah Ave, Rexburg, ID 83440",
+      "phone": "(208)656-0800",
+      "website": "https://paulmitchell.edu/rexburg",
+      "imageurl": "https://dsfee43herbpw.cloudfront.net/uploads/d2987ee837e46daf3708c912.jpg"
+    },
+    {
+      "name": "Crumbl",
+      "lastname": "COOKIES",
+      "address": " 160 W 2nd S Ste 102, Rexburg, ID 83440",
+      "phone": "(208)254-5556",
+      "website": "https://crumblcookies.com/",
+      "imageurl": "https://queencreekmarketplace.com/wp-content/uploads/sites/3/2019/04/Crumbl-Cookies-logo.jpg"
+    }
+  ]
+}
+
+
+
