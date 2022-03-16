@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+
+    <link href="css/base.css" rel='stylesheet'> 
+    <link href="/chamber/css/contact.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logobox">
+        <a href="/chamber/index.html"><img src="images/taoyuan.png" alt="logo"></a>
+        <h1>Taoyuan City Chamber of Commerce</h1>
+    </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="/chamber/index.html">Home</a></li>
+                <li><a href="/chamber/discover.html">Discover</a></li>
+                <li><a href="/chamber/directory.html">Directory</a></li>
+                <li><a href="/chamber/join.html">Join</a></li>
+                <li><a href="/chamber/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social_icon">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="img1"></a>
+            <a href="https://www.linkedin.com/feed/"target="_blank"><img src="images/linkdin.png" alt="img2"></a>
+        </div>
+        <p id="date">date</p>
+        
+       
+        
+        <script>
+            let currentdate = document.lastModified;
+            // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
+            document.getElementById('modified').textContent = `Last Updated ${currentdate} . `;
+        </script>
+
+    </header>
+    <h2 id="monday-banner"></h2>
+    <h1 id="directory-banner">BOARD OF DIRECTORS</h1>
+    <div class="trustees">
+        <secion>
+            <img src="/chamber/images/board.jpg" alt="Photo of the chair">
+            <h2>Hoshino Debug Gen</h2>
+            <h3>Chair of the board</h3>
+        </section>
+
+        <section>
+            <img src="/chamber/images/vice.jpg" alt="Photo of the vice chair">
+            <h2>Aragaki Kawaii Yui</h2>
+            <h3>Vice chair</h3>
+        </section>
+
+        <section>
+            <img src="/chamber/images/sec.jpg" alt="Photo of the secretary">
+            <h2>Gingle Waterfall Wang</h2>
+            <h3>Secretary</h3>
+        </section>
+
+        <section>
+            <img src="/chamber/images/tre.jpg" alt="Photo of the treasurer">
+            <h2>Jacob Chicken Wang</h2>
+            <h3>Treasurer</h3>
+        </section>
+        
+    </div>
+
+
+    <div id="form-field">
+        <h1>Contact</h1>
+        <form action="/week8/thankyou.html" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" placeholder="johndoe@gmail.com" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="509-999-4487" required><br><br>  
+
+
+            <input id="form-submit" type="submit" value="SUBMIT">
+        </form>
+
+    </div>
+<footer>
+
+
+    <footer>
+        <div class="footer-lower">
+            <p>
+                ©<span id="year"></span>.:|:.Taoyuan City Chamber of Commerce
+                <h3>Jason Huang</h3><p>Idaho | WDD-230</p>
+                Last updated:<span id="lastupdated"></span>
+            <p>
+                <!--<p id="modified"></p>
+                -->
+      
+        </div>  
+    </footer>
+       
+    <!--<script>
+        let currentdate = document.lastModified;
+        // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
+        document.getElementById('modified').textContent = `Last Updated ${currentdate} . `;
+
+    </script>
+--><script src="./js/script.js"></script>
+</body>
+</html>
