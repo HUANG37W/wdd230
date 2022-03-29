@@ -55,6 +55,10 @@ header nav{
     display: none;
 }
 
+.navigation a {
+    text-decoration: none;
+}
+
 .responsive li{
     display: flex;
 }
@@ -63,6 +67,7 @@ header nav{
     border: double black;
 }
 .content{
+    text-align: center;
     margin: 10px;
     padding: 5px;
     border: double black;
@@ -135,7 +140,7 @@ header nav{
 #hero button{
     grid-column: 1/4;
     grid-row: 2/2;
-    background-color: green;
+    background-color: rgb(231, 247, 8);
     font-weight: 900;
     font-size: larger;
 }

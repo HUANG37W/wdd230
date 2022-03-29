@@ -4,7 +4,9 @@ form{
     width: 60%;
     margin: 0 auto;
 }
-
+form label{
+    text-align: center;
+}
 form div{
     display: grid;
     margin: .5em;
