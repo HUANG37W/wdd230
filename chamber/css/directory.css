@@ -18,6 +18,7 @@
 }
 .list {
   display: none;
+  text-align: center;
 }
 h1 {
   color: navy;

@@ -87,7 +87,6 @@ header nav{
 }
 
 #spot{
-    height: 300px;
     grid-area: spot;
 }
 
