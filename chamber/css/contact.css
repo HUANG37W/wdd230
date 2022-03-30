@@ -14,6 +14,7 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    text-align: center;
 }
 
 .trustees {
@@ -24,6 +25,22 @@ h1 {
 
 .trustees section:last-of-type {
     grid-column: 2/3;
+}
+
+#form-submit{
+    padding: 0.8em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+
+#form-field input{
+    height:2em;
+}
+
+#form-field form{
+    text-align: center;
 }
 
 @media only screen and (max-width: 400px) {
