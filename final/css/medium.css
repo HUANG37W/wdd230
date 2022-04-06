@@ -1,12 +1,7 @@
 @media only screen and (min-width: 34.5em) {
   header,
-  main h1,
-  .weather-summary {
+  main h1 {
     padding: 30px;
-  }
-
-  .banner img {
-    margin-left: 30px;
   }
 
   nav {
@@ -43,66 +38,84 @@
     color: white;
   }
 
-  .hero-container {
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: 20px 1fr 20px;
-    margin-bottom: 30px;
-    height: 270px;
+  .info-container {
+    display: flex;
   }
 
-  .hero-container img {
-    height: 100%;
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .half-input {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+  }
+
+  .personal-info,
+  .storm-info,
+  .phone-container,
+  .zip-container {
+    flex: 0.5;
+  }
+
+  .slider {
+    width: 85%;
+  }
+
+  .slider input {
+    cursor: pointer;
+  }
+
+  .storm-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .personal-info input,
+  .storm-info input {
+    width: 80%;
+  }
+
+  .phone-container input,
+  .zip-container input {
     width: 100%;
-    object-fit: cover;
-    grid-row: 1/4;
   }
 
-  .weather-summary {
-    width: 220px;
-    grid-row: 2/3;
-    background-color: black;
-    opacity: 0.6;
-    align-self: unset;
+  #region,
+  .radio {
+    width: 80%;
+  }
 
+  .email-container label,
+  .zip-container label {
     display: block;
   }
 
-  .weather-summary h2,
-  .weather-summary p {
-    z-index: 2;
-    color: white;
+  button {
+    width: 200px;
+    align-self: flex-end;
+    transition: all 0.2s ease-in-out;
   }
 
-  .weather-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-    max-width: unset;
+  button:hover {
+    cursor: pointer;
+    /* filter: brightness(0.8); */
+    background-color: hsl(183, 60%, 35%);
   }
 
-  .weather-info p {
-    flex: 0.5;
+  button:active {
+    transform: scale(0.95);
   }
 
-  .weather-info span {
-    color: white;
-    flex: 0.3;
+  #thanksButton {
+    align-self: center;
+    margin-top: 100px;
   }
 
-  .article-info img {
-    width: 100%;
-    height: 250px;
-  }
-
-  .article-info p {
-    flex: 0.5;
-  }
-
-  .article-container h2 {
-    max-width: 700px;
-  }
-
-  .article-container,
   .footer-container {
     padding: 20px;
   }
