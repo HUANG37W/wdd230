@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Page</title>
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/join.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logobox">
+      <a href="./index.html"><img src="images/taoyuan.png" alt="logo"></a>
+    <h1>Taoyuan City Chamber of Commerce</h1>
+</div>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="social_icon">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="img1"></a>
+        <a href="https://www.linkedin.com/feed/"target="_blank"><img src="images/linkdin.png" alt="img2"></a>
+    </div>
+    <p id="date">date</p>
+    
+   
+    
+    <script>
+        let currentdate = document.lastModified;
+        // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
+        document.getElementById('modified').textContent = `Last Updated ${currentdate} . `;
+    </script>
+
+</header>
+
+    <form method="get" action="thankyou.html">
+        <div>
+          <label for="fn">first name:</label>
+          <input id="fn" name="firstname" required>
+          <label for="ln">last name:</label>
+          <input id="ln" name="lastname" required>
+          <label title="Business Position">BP:</label>
+          <input id="bp" name="businessposition" required>
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="johndoe@gmail.com"/>
+        </div>
+        
+        <div class="col2">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" name="phoneNumber" placeholder="555-555-5555" required/>
+          <label title="Business Name">BN:</label>
+          <input id="bn" name="businessname" required>
+          <label for="membershipLevel">Membership Level</label>
+          <input
+            list="types"
+            name="membershipLevel"
+            id="membershipLevel"
+            placeholder="Choose the type of membership level"
+          />
+          <datalist id="types">
+            <option value="Starter"></option>
+            <option value="Pro"></option>
+            <option value="Premium"></option>
+            <option value="Elite"></option>
+          </datalist>
+          <label for="textArea">Business Description: </label>
+          <textarea name="textArea" cols="30" rows="10"></textarea>
+          <input type="submit" value="Submit">
+        </div>
+       
+        <input id='date' type="hidden" name="todaydate">
+
+       
+
+    </form> 
+    <h2> Membership benefits</h2>
+<section id="membership">
+  
+    
+    <div><h3>Starter</h3>
+    <ul>
+      <li>For non profit organizations and there is no fee</li>
+    </ul>
+    <h3>Pro</h3>
+    <ul>
+      <li>15% discount on events</li>
+
+      <li> 10% discount on advertising</li>
+        
+      <li>Fee of $50/month</li>
+    </ul>
+    </div>
+    <div>
+    <h3>Premium</h3>
+    <ul>
+      <li>25% discount on events</li>
+
+      <li>15% discount on advertising</li>
+        
+      <li>Free participation in the trade fair</li>
+
+      <li>Fee of $100/month</li>
+
+    <h3>Elite</h3>
+    <ul>
+      <li>50% discount on events</li>
+  
+      <li>50% discount on advertising</li>
+          
+      <li>Free participation in the trade fair</li>
+
+      <li>5 free featured ads per year</li>
+
+      <li>1 free training per quarter</li>
+  
+      <li>Fee of $250/month</li>
+    </ul>
+  </div>
+  </section>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+    
+    <footer>
+      <div class="footer-lower">
+        <p>
+            ©<span id="year"></span>.:|:.Taoyuan City Chamber of Commerce
+            <h3>Jason Huang</h3><p>Idaho | WDD-230</p>
+            Last updated:<span id="lastupdated"></span>
+        <p>
+            <!--<p id="modified"></p>
+            -->
+    
+      </div>
+      </footer>
+      
+</body>
+</html>

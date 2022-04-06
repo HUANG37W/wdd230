@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Business Directory Page</title>
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/directory.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logobox">
+      <a href="./index.html"><img src="images/taoyuan.png" alt="logo"></a>
+    <h1>Taoyuan City Chamber of Commerce</h1>
+</div>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="social_icon">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="img1"></a>
+        <a href="https://www.linkedin.com/feed/"target="_blank"><img src="images/linkdin.png" alt="img2"></a>
+    </div>
+    <p id="date">date</p>
+    
+   
+    
+    <script>
+        let currentdate = document.lastModified;
+        // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
+        document.getElementById('modified').textContent = `Last Updated ${currentdate} . `;
+    </script>
+
+</header>
+
+  <header>
+   
+  </header>
+  <main id="directory-main">
+    <h1>Business Companies</h1>
+    <div class="buttons">
+      <button class="card-button">
+        <img class="button-img" src="./images/grid.png" alt="grid">
+      </button>
+      <button class="list-button">
+        <img class="button-img" src="./images/list.png" alt="list">
+      </button>
+    </div>
+		<div class="cards">
+
+		</div>
+    <div class="list">
+
+    </div>
+  </main>
+  <footer>
+    <div class="footer-lower">
+      <p>
+          ©<span id="year"></span>.:|:.Taoyuan City Chamber of Commerce
+          <h3>Jason Huang</h3><p>Idaho | WDD-230</p>
+          Last updated:<span id="lastupdated"></span>
+      <p>
+          <!--<p id="modified"></p>
+          -->
+
+  </div>
+  </footer>
+  <script src="./js/directory.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

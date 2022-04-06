@@ -1,0 +1,44 @@
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    margin: 0 auto;
+}
+form label{
+    text-align: center;
+}
+form div{
+    display: grid;
+    margin: .5em;
+}
+
+form input, form textarea{
+    margin-bottom: 1em;
+    padding: .5em;
+    border-radius: 1em;
+    border: 1px solid gray;
+}
+
+form input[type="submit"] {
+    background-color: aquamarine;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    justify-self: center;
+}
+
+
+h2{
+    text-align: center;
+}
+#membership{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.col2 label{
+    margin-bottom: 2.5em;
+}
