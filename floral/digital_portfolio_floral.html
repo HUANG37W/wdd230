@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link href="./css/base.css" rel='stylesheet'> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logobox">
+        <a href="./digital_portfolio_floral.html"><img src="images/floral_logo.png" alt="logo"></a>
+        <h1>Digital Portfolio</h1>
+    </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="./digital_portfolio_floral.html">Home</a></li>
+                <li><a href="./designs.html">Designs</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social_icon">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="img1"></a>
+            <a href="https://www.linkedin.com/in/chun-shen-huang-8a146216b/"target="_blank"><img src="images/linkdin.png" alt="img2"></a>
+        </div>
+        <p id="date">date</p>
+        
+       
+        
+        <script>
+            let currentdate = document.lastModified;
+            // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
+            document.getElementById('modified').textContent = `Last Updated ${currentdate} . `;
+        </script>
+
+    </header>
+    <main>
+        <div class="content" id="hero">  
+            <img src="./images/town.jpg" alt="town">
+            <p>Welcome to Taoyuan City</p>
+            <a href="./join.html">
+            <button>Join the Chamber</button>
+            </a>
+        </div>
+        <div class="content side-content" id="event">
+            <h3>Ribbon Cutting</h3>
+            <p>The Diamond Shack</p>
+            <p>Join us for the grand opening of The Diamond Shack,
+            Thursday at 1:00 p.m.<a herf="#">more info ...</a></p>
+        </div>
+        <div class="content side-content" id="weather">
+            <h3>Weather</h3>
+        <div>
+            <span id="current-temp"></span> &deg;F</p>
+            <span id="windspeed"></span>
+            <span id="windchill"></span>
+        </div>    
+        
+        <figure>
+        <img src="" alt="" id="weathericon" />  
+        <figcaption></figcaption>
+        </figure>
+        </div>
+
+        <div class="content" id="news">
+            <h4>News Release</h4>
+            <p>The "2022 Taiwan Lantern Festival" represents a return to Kaohsiung of Taiwan's main lantern
+            after a 20-year absence. The Weiwuying Metropolitan Park and Love River Bay will be the dual 
+            locations for this year's celebrations, and these are also home to two national-level art and 
+            cultural venues – the Weiwuying National Art and Cultural Center and the Kaohsiung Music Center. 
+            The exhibition area is the largest ever! This year's lantern festival will link two main lantern areas,
+            symbolizing the successful integration of Kaohsiung County and City into one,
+            and the resulting economic development and mutual benefits. The design is part of this year's festival theme
+            of "Lights on the Spot."</p>
+        </div>
+        
+        <div class="content side-content" id="join">
+            <a href="./join.html">
+            <button>Join Us!</button>
+            </a>
+            <p>Discover how to join the chamber commerence and how it will 
+            benefit your organization!</p>
+        </div>
+
+
+
+        <div class="content" id="spot">
+            <div class="light" id="spot1">
+                <p>Thankful Transport</p>
+                <img src="./images/truck.jpg" alt="truck">
+                <p>"We will get it there for you!"</p>
+            </div>
+                
+            <div class="light" id="spot2">
+                <p>Resume</p>
+                <img src="./images/code.png" alt="code">
+                <p>"Come to the coding lab!"</p>
+            </div>
+            <div class="light" id="spot3">
+                <p>Build a Treefort</p>
+                <img src="./images/tree.jpg" alt="tree">
+                <p>"Play with friends here!"</p>
+            </div> 
+        </div>
+            
+    </main>
+    <footer>
+        <div class="footer-top">
+            <img src="./images/taoyuan.png" alt="logo">
+            <i><h2 class="footer-header">Taoyuan City Chamber of Commerce</h2></i>
+            <i><p class="address">111 main street Rexburg, Idaho</p></i>
+            <p class="email">info@taoyuan.org</p>
+            <p class="phone">+(111)886-7640</p>
+            <a class="map" href="https://www.google.com/maps/place/111+E+Main+S
+                t,+Rexburg,+ID+83440/@43.8264166,-111.7825784,17z/data=!3m1!4b
+                1!4m5!3m4!1s0x53540a514e388655:0xd7ef2bd6b7a5b099!8m2!3d43.826
+                4128!4d-111.7803897?hl=zh-TW">
+                📍 Location Map </a>
+        </div>
+        <hr>
+        <div class="footer-lower">
+            <p>
+                ©<span id="year"></span>.:|:.Taoyuan City Chamber of Commerce
+                <h3>Jason Huang</h3><p>Idaho | WDD-230</p>
+                Last updated:<span id="lastupdated"></span>
+            <p>
+                <!--<p id="modified"></p>
+                -->
+
+        </div>
+        
+
+            
+            
+            
+            
+    </footer>
+       
+    <!--<script>
+        let currentdate = document.lastModified;
+        // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
+        document.getElementById('modified').textContent = `Last Updated ${currentdate} . `;
+
+    </script>
+--><script src="./js/script.js"></script>
+</body>
+</html>
