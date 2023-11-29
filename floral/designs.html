@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/lazyLoading.css" />
+    <script src="./js/lazyLoading.js" defer></script>
+    <title>Lazy Load Images</title>
+  </head>
+  <body>
+    <header>
+      <div class="logobox">
+        <a href="./digital_portfolio_floral.html"><img src="images/floral_logo.png" alt="logo"></a>
+        <h1>Digital Portfolio</h1>
+  </div>
+      <nav>
+          <ul class="navigation">
+              <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+              <li><a href="./digital_portfolio_floral.html">Home</a></li>
+              <li><a href="./designs.html">Designs</a></li>
+              <li><a href="./grouping.html">Grouping</a></li>
+              <li><a href=".join.html">Join</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+          </ul>
+      </nav>
+      <div class="social_icon">
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="img1"></a>
+          <a href="https://www.linkedin.com/in/chun-shen-huang-8a146216b/"target="_blank"><img src="images/linkdin.png" alt="img2"></a>
+      </div>
+      <p id="date">date</p>
+      
+     
+      
+      <script>
+          let currentdate = document.lastModified;
+          // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
+          document.getElementById('modified').textContent = `Last Updated ${currentdate} . `;
+      </script>
+  
+  </header>
+  <div id="lazyload">
+    <div>
+    <img
+      src="./images/class1.jpg"
+      alt="Lazy loaded image1"/>
+    </div>
+    
+  
+    <div>
+    <img
+      src="./images/class2.jpg"
+      alt="Lazy loaded image2"/>
+    </div>
+
+    <div>
+    <img
+      src="./images/class3.jpg"
+      alt="Lazy loaded image3"/>
+    </div>
+
+    <div>
+    <img
+      src="./images/class4.jpg"
+      alt="Lazy loaded image4"/>
+    </div>
+
+    <div>
+    <img
+      src="./images/class5.jpg"
+      alt="Lazy loaded image5"/>
+    </div>
+
+
+    <div>
+    <img
+      src="./images/class6.jpg"
+      alt="Lazy loaded image6"/>
+    </div>
+
+
+    <div>
+    <img
+      src="./images/class7.jpg"
+      alt="Lazy loaded image7"/>
+    </div>
+
+    <div>
+    <img
+      src="./images/class8.jpg"
+      alt="Lazy loaded image8"/>
+    </div>
+
+    <div>
+    <img
+      src="./images/class9.jpg"
+      alt="Lazy loaded image9"/>
+    </div>
+
+    
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+  
+  <footer>
+  <div class="footer-lower">
+    <p>
+        ©<span id="year"></span>.:|:. Digital Portfolio
+        <h3>Jason Huang</h3><p>BYU-Idaho | HORT-435</p>
+        Last updated:<span id="lastupdated"></span>
+    <p>
+        <!--<p id="modified"></p>
+        -->
+
+  </div>
+  </footer>
+  
+  </body>
+</html>
